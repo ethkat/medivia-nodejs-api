@@ -14,11 +14,12 @@ class MediviaAPI {
       return;
     } else {
       const itsNotAValidWorldName = MEDIVIA_WORLD_NAMES.indexOf(worldName) > -1;
-      if (itsNotAValidWorldName) {
+      if (!itsNotAValidWorldName) {
         console.warn(`Sorry but ${worldName} its not a valid Medivia.org worldname`);
         return;
+      } else {
+        this.worldName = worldName;
       }
-      this.worldName = worldName;
     }
   }
 

@@ -57,10 +57,8 @@ mediviaAPI.getOnlinePlayers().then((result) => {
 **Example response**
 ```
 {
-  members: [
-    'member1',
-    'member2',
-    ...
-  ]
+  members: [{
+      name: 'Wingzter',
+    }, ...more]
 }
 ```

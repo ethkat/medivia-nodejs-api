@@ -46,7 +46,9 @@ const readDeathList = ($) => {
   }
 };
 
-const getGuildMembers = ($) => (index, a) => $(a).text();
+const getGuildMembers = ($) => (index, a) => ({
+  name: $(a).text(),
+});
 
 export const readOnlineBody = body => {
   const $ = cheerio.load(body);
